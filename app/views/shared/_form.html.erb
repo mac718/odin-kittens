@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-3 offset-md-4">
+<%= form_for @kitten do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: 'form-control' %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age, class: 'form-control' %>
+
+  <%= f.label :cuteness %>
+  <%= f.number_field :cuteness, class: 'form-control' %>
+
+  <%= f.label :softness %>
+  <%= f.number_field :softness, class: 'form-control' %>
+
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+</div>
